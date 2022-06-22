@@ -129,6 +129,9 @@ network:
   #   validator keys already preregistered as validators
   preregisteredValidatorKeysMnemonic: "giant issue aisle success illegal bike spike question tent bar rely arctic volcano long crawl hungry vocal artwork sniff fantasy very lucky have athlete"
 
+  # num of validator key to preregister as validators
+  numValidatorKeysToPreregister: 2000
+
 #  If set to false, we won't wait for the EL clients to mine at least 1 block before proceeding with adding the CL clients
 #  This is purely for debug purposes; waiting for blockNumber > 0 is required for the CL network to behave as
 #   expected, but that wait can be several minutes. Skipping the wait can be a good way to shorten the debug loop on a
