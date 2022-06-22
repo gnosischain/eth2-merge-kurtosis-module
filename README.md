@@ -149,6 +149,9 @@ verificationsTTDEpochLimit: 5
 #  If set, after the merge, this will be the maximum number of epochs wait for the verifications to succeed.
 verificationsEpochLimit: 5
 
+# If enabled, the EL will use Clique as the consensus algorithm
+cliqueEnabled: false
+
 #  The global log level that all clients should log at
 #  Valid values are "error", "warn", "info", "debug", and "trace"
 #  This value will be overridden by participant-specific values

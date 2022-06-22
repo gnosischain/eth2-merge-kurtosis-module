@@ -104,6 +104,9 @@ type ExecuteParams struct {
 
 	// The log level that the started clients should log at
 	ClientLogLevel GlobalClientLogLevel `yaml:"logLevel"`
+
+	// Setup clique, If enabled, the EL will use Clique as the consensus algorithm
+	CliqueEnabled bool `yaml:"cliqueEnabled"`
 }
 
 type ParticipantParams struct {

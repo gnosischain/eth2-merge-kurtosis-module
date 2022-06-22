@@ -36,6 +36,7 @@ type genesisGenerationConfigTemplateData struct {
 	DepositContractAddress string
 	UnixTimestamp uint64
 	TotalTerminalDifficulty uint64
+	CliqueEnabled bool
 }
 
 type genesisGenerationCmd func(genesisConfigFilepathOnGenerator string)[]string
