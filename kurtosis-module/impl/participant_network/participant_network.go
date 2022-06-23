@@ -58,6 +58,7 @@ func LaunchParticipantNetwork(
 	allParticipantSpecs []*module_io.ParticipantParams,
 	globalLogLevel module_io.GlobalClientLogLevel,
 	shouldWaitForMining bool,
+	cliqueEnabled bool,
 ) (
 	resultParticipants []*Participant,
 	resultClGenesisUnixTimestamp uint64,
@@ -106,6 +107,7 @@ func LaunchParticipantNetwork(
 		networkParams.NetworkID,
 		networkParams.DepositContractAddress,
 		networkParams.TotalTerminalDifficulty,
+		cliqueEnabled,
 	)
 	if err != nil {
 		return nil, 0, stacktrace.Propagate(err, "An error occurred generating EL client genesis data")

@@ -81,6 +81,7 @@ func (e Eth2KurtosisModule) Execute(enclaveCtx *enclaves.EnclaveContext, seriali
 		paramsObj.Participants,
 		paramsObj.ClientLogLevel,
 		paramsObj.WaitForMining,
+		paramsObj.CliqueEnabled,
 	)
 	if err != nil {
 		return "", stacktrace.Propagate(

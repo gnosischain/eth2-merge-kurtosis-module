@@ -85,6 +85,7 @@ func GenerateELGenesisData(
 	networkId string,
 	depositContractAddress string,
 	totalTerminalDifficulty uint64,
+	cliqueEnabled bool,
 ) (
 	*ELGenesisData,
 	error,
@@ -94,6 +95,7 @@ func GenerateELGenesisData(
 		DepositContractAddress:  depositContractAddress,
 		UnixTimestamp:           genesisUnixTimestamp,
 		TotalTerminalDifficulty: totalTerminalDifficulty,
+		CliqueEnabled:           cliqueEnabled,
 	}
 	genesisConfigFilepathOnModule := path.Join(os.TempDir(), genesisConfigFilename)
 	if err := service_launch_utils.FillTemplateToPath(

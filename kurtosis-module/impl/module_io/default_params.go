@@ -73,7 +73,7 @@ func GetDefaultExecuteParams() *ExecuteParams {
 		VerificationsTTDEpochLimit: 5,
 		VerificationsEpochLimit:    5,
 		ClientLogLevel:             GlobalClientLogLevel_Info,
-		CliqueEnabled:				false,
+		CliqueEnabled:				      false,
 	}
 	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	//       If you change these in any way, modify the example JSON config in the README to reflect this!

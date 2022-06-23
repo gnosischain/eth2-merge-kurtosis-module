@@ -90,6 +90,7 @@ func TestPrelaunchGenesisGeneration(t *testing.T) {
 		networkParams.NetworkID,
 		networkParams.DepositContractAddress,
 		networkParams.TotalTerminalDifficulty,
+		executeParams.CliqueEnabled,
 	)
 	require.NoError(t, err)
 
