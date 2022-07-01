@@ -44,7 +44,7 @@ type clGenesisConfigTemplateData struct {
 	TotalTerminalDifficulty            uint64
 	AltairForkEpoch                    uint64
 	MergeForkEpoch                     uint64
-	NumValidatorKeysToPreregister uint32
+	NumValidatorKeysToPreregister 	   uint32
 	PreregisteredValidatorKeysMnemonic string
 	DepositContractAddress string
 }

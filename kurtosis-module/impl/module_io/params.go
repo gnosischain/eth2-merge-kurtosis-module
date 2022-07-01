@@ -184,4 +184,7 @@ type NetworkParams struct {
 	// This menmonic will a) be used to create keystores for all the types of validators that we have and b) be used to generate a CL genesis.ssz that has the children
 	//  validator keys already preregistered as validators
 	PreregisteredValidatorKeysMnemonic string	`yaml:"preregisteredValidatorKeysMnemonic"`
+
+	// Number of validator keys to preregister inside the outputted CL genesis.ssz
+	NumValidatorKeysToPreregister uint32 `yaml:"numValidatorKeysToPreregister"`
 }
